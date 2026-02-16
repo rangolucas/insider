@@ -2,8 +2,6 @@ FROM node:18.11
 
 ENV METEOR_ALLOW_SUPERUSER=true
 ENV ROOT_URL="http://localhost:3000"
-ENV NODE_OPTIONS="--max-old-space-size=512"
-ENV TOOL_NODE_FLAGS="--max-old-space-size=512"
 RUN curl "https://install.meteor.com/" | sh
 
 COPY . /usr/src/app
